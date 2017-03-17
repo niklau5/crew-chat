@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		091D02101E7C204200C9A437 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D020F1E7C204200C9A437 /* RoundTextField.swift */; };
 		091D02121E7C2B2D00C9A437 /* RoundedButoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D02111E7C2B2D00C9A437 /* RoundedButoon.swift */; };
+		091D02151E7C2EAC00C9A437 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D02141E7C2EAC00C9A437 /* LoginVC.swift */; };
 		097BBA351E7C01BC00924181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA341E7C01BC00924181 /* AppDelegate.swift */; };
 		097BBA371E7C01BC00924181 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA361E7C01BC00924181 /* CameraVC.swift */; };
 		097BBA3C1E7C01BC00924181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097BBA3B1E7C01BC00924181 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		091D020F1E7C204200C9A437 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		091D02111E7C2B2D00C9A437 /* RoundedButoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButoon.swift; sourceTree = "<group>"; };
+		091D02141E7C2EAC00C9A437 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		097BBA311E7C01BC00924181 /* Crew-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crew-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		097BBA341E7C01BC00924181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097BBA361E7C01BC00924181 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -61,6 +63,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		091D02131E7C2E9500C9A437 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				091D02141E7C2EAC00C9A437 /* LoginVC.swift */,
+				097BBA471E7C040700924181 /* CameraViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		097BBA281E7C01BC00924181 = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +93,9 @@
 		097BBA331E7C01BC00924181 /* Crew-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				091D02131E7C2E9500C9A437 /* Controller */,
 				091D020E1E7C203200C9A437 /* View */,
 				097BBA461E7C040700924181 /* PreviewView.swift */,
-				097BBA471E7C040700924181 /* CameraViewController.swift */,
 				097BBA481E7C040700924181 /* PhotoCaptureDelegate.swift */,
 				097BBA341E7C01BC00924181 /* AppDelegate.swift */,
 				097BBA361E7C01BC00924181 /* CameraVC.swift */,
@@ -241,6 +252,7 @@
 			files = (
 				097BBA371E7C01BC00924181 /* CameraVC.swift in Sources */,
 				097BBA4A1E7C040700924181 /* CameraViewController.swift in Sources */,
+				091D02151E7C2EAC00C9A437 /* LoginVC.swift in Sources */,
 				097BBA351E7C01BC00924181 /* AppDelegate.swift in Sources */,
 				097BBA4B1E7C040700924181 /* PhotoCaptureDelegate.swift in Sources */,
 				091D02101E7C204200C9A437 /* RoundTextField.swift in Sources */,
