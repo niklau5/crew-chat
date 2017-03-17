@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		097BBA351E7C01BC00924181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA341E7C01BC00924181 /* AppDelegate.swift */; };
-		097BBA371E7C01BC00924181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA361E7C01BC00924181 /* ViewController.swift */; };
-		097BBA3A1E7C01BC00924181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097BBA381E7C01BC00924181 /* Main.storyboard */; };
+		097BBA371E7C01BC00924181 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA361E7C01BC00924181 /* CameraVC.swift */; };
 		097BBA3C1E7C01BC00924181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097BBA3B1E7C01BC00924181 /* Assets.xcassets */; };
 		097BBA3F1E7C01BC00924181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097BBA3D1E7C01BC00924181 /* LaunchScreen.storyboard */; };
+		097BBA491E7C040700924181 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA461E7C040700924181 /* PreviewView.swift */; };
+		097BBA4A1E7C040700924181 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA471E7C040700924181 /* CameraViewController.swift */; };
+		097BBA4B1E7C040700924181 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BBA481E7C040700924181 /* PhotoCaptureDelegate.swift */; };
+		097BBA4D1E7C09D300924181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097BBA4C1E7C09D300924181 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		097BBA311E7C01BC00924181 /* Crew-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crew-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		097BBA341E7C01BC00924181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		097BBA361E7C01BC00924181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		097BBA391E7C01BC00924181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		097BBA361E7C01BC00924181 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		097BBA3B1E7C01BC00924181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097BBA3E1E7C01BC00924181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		097BBA401E7C01BC00924181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097BBA461E7C040700924181 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		097BBA471E7C040700924181 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		097BBA481E7C040700924181 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		097BBA4C1E7C09D300924181 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		097BBA331E7C01BC00924181 /* Crew-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				097BBA461E7C040700924181 /* PreviewView.swift */,
+				097BBA471E7C040700924181 /* CameraViewController.swift */,
+				097BBA481E7C040700924181 /* PhotoCaptureDelegate.swift */,
 				097BBA341E7C01BC00924181 /* AppDelegate.swift */,
-				097BBA361E7C01BC00924181 /* ViewController.swift */,
-				097BBA381E7C01BC00924181 /* Main.storyboard */,
+				097BBA361E7C01BC00924181 /* CameraVC.swift */,
+				097BBA4C1E7C09D300924181 /* Main.storyboard */,
 				097BBA3B1E7C01BC00924181 /* Assets.xcassets */,
 				097BBA3D1E7C01BC00924181 /* LaunchScreen.storyboard */,
 				097BBA401E7C01BC00924181 /* Info.plist */,
@@ -126,7 +135,7 @@
 			files = (
 				097BBA3F1E7C01BC00924181 /* LaunchScreen.storyboard in Resources */,
 				097BBA3C1E7C01BC00924181 /* Assets.xcassets in Resources */,
-				097BBA3A1E7C01BC00924181 /* Main.storyboard in Resources */,
+				097BBA4D1E7C09D300924181 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +146,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097BBA371E7C01BC00924181 /* ViewController.swift in Sources */,
+				097BBA371E7C01BC00924181 /* CameraVC.swift in Sources */,
+				097BBA4A1E7C040700924181 /* CameraViewController.swift in Sources */,
 				097BBA351E7C01BC00924181 /* AppDelegate.swift in Sources */,
+				097BBA4B1E7C040700924181 /* PhotoCaptureDelegate.swift in Sources */,
+				097BBA491E7C040700924181 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		097BBA381E7C01BC00924181 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				097BBA391E7C01BC00924181 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		097BBA3D1E7C01BC00924181 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -265,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93L72G83S5;
 				INFOPLIST_FILE = "Crew-Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.crewnet.Crew-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93L72G83S5;
 				INFOPLIST_FILE = "Crew-Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.crewnet.Crew-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
